@@ -1,12 +1,5 @@
 const chunk = require('../chunk');
-try {
-  chunk({
-    0: 1,
-    1: 2
-  }, 1);
-} catch(e) {
-  console.log(e.message);
-}
+
 test('illegal input array', () => {
   expect(() => chunk({1:2, 2:3})).toThrow()
 })
