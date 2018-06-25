@@ -10,11 +10,12 @@ function intersection(...args) {
   }
   const unConfirmed = args.slice(1)
   const res = refer.filter(item => {
-    let loopRes = unConfirmed.map(arg => {
-      if (!Array.isArray(arg)) throw new Error('You can only use intersection for arrays!')
-      return arg.indexOf(item) < 0
-    })
-    return !loopRes.indexOf(false)
+    for (let i = 0; i < unConfirmed.length; i++) {
+      if(unConfirmed[i].indexOf(item) < 0) {
+        return false
+      }
+    }
+    return true
   });
   return res
 }
