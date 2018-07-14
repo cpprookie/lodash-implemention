@@ -10,5 +10,8 @@ module.exports = (arr, separator = '') => {
   //   res += String(arr[i])
   // }
 
-  return arr.reduce((cal, item, index) => cal += index !== l-1 ?  item + separator : item,  '')
+  return arr.reduce(
+    (cal, item, index) => (cal += index !== l - 1 ? item + separator : item),
+    ''
+  )
 }

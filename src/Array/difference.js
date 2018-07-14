@@ -1,8 +1,8 @@
 /**
  * simple value compare
  * @todo compare object and array
- * @param {@type Array} arr1 
- * @param {@type Array} arr2 
+ * @param {@type Array} arr1
+ * @param {@type Array} arr2
  */
 function difference(arr1, arr2) {
   if (!Array.isArray(arr1) || !Array.isArray(arr2)) {

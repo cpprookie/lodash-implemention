@@ -1,5 +1,5 @@
-const throttle = require('./throttle');
+const throttle = require('./throttle')
 
 module.exports = {
-  throttle,
-};
+  throttle
+}

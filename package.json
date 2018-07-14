@@ -4,11 +4,20 @@
   "description": "Implement functions that lodash provides.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --colors"
+    "test": "jest --colors",
+    "lint": "./node_modules/.bin/prettier --single-quote --no-semi --write src/**/*.js && eslint ./src --color"
   },
-  "author": "",
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test && npm run lint"
+    }
+  },
+  "author": "cpprookie",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^23.1.0"
+    "eslint": "^5.1.0",
+    "ghooks": "^2.0.4",
+    "jest": "^23.1.0",
+    "prettier": "1.13.7"
   }
 }

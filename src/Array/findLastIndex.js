@@ -1,18 +1,18 @@
 function findLastIndex(arr, predicate) {
-  if(!Array.isArray) {
+  if (!Array.isArray) {
     throw new Error('You can only use findLastIndex for arrays!')
   }
-  if(typeof(predicate) !== 'function') {
+  if (typeof predicate !== 'function') {
     throw new Error('predicate needs to be function in findLastIndex!')
   }
   let res = -1
-  for (i = arr.length - 1; i > -1; i--) {
+  for (let i = arr.length - 1; i > -1; i--) {
     if (predicate(arr[i])) {
       res = i
       break
     }
   }
-  return res;
+  return res
 }
 
 module.exports = findLastIndex
