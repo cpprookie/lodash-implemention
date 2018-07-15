@@ -9,13 +9,13 @@ test('one memeber array', () => {
 })
 
 test('smallest value', () => {
-  expect(sortedIndex([5,5,5], 4)).toEqual(0)
+  expect(sortedIndex([5, 5, 5], 4)).toEqual(0)
 })
 
 test('biggest value', () => {
-  expect(sortedIndex([1,1,1], 4)).toEqual(3)
+  expect(sortedIndex([1, 1, 1], 4)).toEqual(3)
 })
 
 test('unsorted array', () => {
-  expect(sortedIndex([1,2,3,5,4,3,5,4,5,3,4], 4)).toEqual(6)
+  expect(sortedIndex([1, 2, 3, 5, 4, 3, 5, 4, 5, 3, 4], 4)).toEqual(6)
 })
