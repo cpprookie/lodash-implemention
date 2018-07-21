@@ -9,5 +9,5 @@ test('one lenth array', () => {
 })
 
 test('normal case', () => {
-  expect(tail([1,2,3])).toEqual([2,3])
+  expect(tail([1, 2, 3])).toEqual([2, 3])
 })
