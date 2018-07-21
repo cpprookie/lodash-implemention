@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest --colors",
-    "lint": "./node_modules/.bin/prettier --single-quote --no-semi --write src/**/*.js && eslint ./src --color"
+    "lint": "./node_modules/.bin/prettier --single-quote --no-semi --write src/**/*.js && eslint ./src --color && git add  ."
   },
   "config": {
     "ghooks": {
