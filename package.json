@@ -5,12 +5,12 @@
   "main": "src/index.js",
   "scripts": {
     "babel": "rm -rf lib/ && babel src --out-dir lib --presets=env",
-    "lint": "prettier --single-quote --no-semi --write src/**/*.js && npm run babel",
-    "test": "npm run lint && jest lib --colors"
+    "lint": "prettier --single-quote --no-semi --write src/**/*.js",
+    "test": "npm run babel && jest lib --colors --testURL=http://localhost/"
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run test && git add  ."
+      "pre-commit": "npm run lint && npm run test && git add  ."
     }
   },
   "author": "cpprookie",

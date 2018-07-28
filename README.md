@@ -6,6 +6,6 @@ To run this project to have a look
 
 ```
 git clone https://github.com/cpprookie/lodash-implemention
-npm install 
+npm install
 npm run test
 ```
