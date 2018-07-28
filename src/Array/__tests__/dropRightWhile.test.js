@@ -1,5 +1,5 @@
-const dropRightWhile = require('../dropRightWhile')
-const { users, users2 } = require('../testVariables')
+import dropRightWhile from '../dropRightWhile'
+import { users, users2 } from '../testVariables'
 
 test('all pass', () => {
   expect(

@@ -5,4 +5,4 @@ function compact(arr) {
   return arr.filter(item => !!item)
 }
 
-module.exports = compact
+export default compact

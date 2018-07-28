@@ -15,4 +15,4 @@ function findLastIndex(arr, predicate) {
   return res
 }
 
-module.exports = findLastIndex
+export default findLastIndex

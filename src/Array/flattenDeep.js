@@ -1,6 +1,6 @@
-const flattenDepth = require('./flattenDepth')
+import flattenDepth from './flattenDepth'
 
-module.exports = arr => {
+export default arr => {
   if (!Array.isArray(arr)) {
     throw new Error('You can only use flattenDeep for arrays!')
   }

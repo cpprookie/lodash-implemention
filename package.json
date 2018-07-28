@@ -4,17 +4,20 @@
   "description": "Implement functions that lodash provides.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --colors",
-    "lint": "./node_modules/.bin/prettier --single-quote --no-semi --write src/**/*.js && eslint ./src --color && git add  ."
+    "babel": "rm -rf lib/ && babel src --out-dir lib --presets=env",
+    "lint": "prettier --single-quote --no-semi --write src/**/*.js && npm run babel",
+    "test": "npm run lint && jest lib --colors"
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run lint && npm run test"
+      "pre-commit": "npm run test && git add  ."
     }
   },
   "author": "cpprookie",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.1.0",
     "ghooks": "^2.0.4",
     "jest": "^23.1.0",

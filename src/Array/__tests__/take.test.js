@@ -1,4 +1,4 @@
-const take = require('../take')
+import take from '../take'
 
 test('null size', () => {
   expect(take([1, 2, 3])).toEqual([1])

@@ -1,4 +1,4 @@
-const pull = require('../pull')
+import pull from '../pull'
 
 let arr = ['a', 'b', 'c', 'a', 'c']
 test('single comparison', () => {

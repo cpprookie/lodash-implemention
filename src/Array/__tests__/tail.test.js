@@ -1,4 +1,4 @@
-const tail = require('../tail')
+import tail from '../tail'
 
 test('empty arary', () => {
   expect(tail()).toEqual([])

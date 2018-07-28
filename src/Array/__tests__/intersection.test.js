@@ -1,4 +1,4 @@
-const intersection = require('../intersection')
+import intersection from '../intersection'
 
 test('zero length args', () => {
   expect(intersection()).toEqual([])

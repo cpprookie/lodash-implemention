@@ -1,4 +1,4 @@
-module.exports = (arr, index = 0) => {
+export default (arr, index = 0) => {
   if (!Array.isArray(arr)) {
     throw new Error('You can only use nth for arrays!')
   }

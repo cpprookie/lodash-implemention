@@ -15,4 +15,4 @@ function chunk(arr, size = 1) {
   return result
 }
 
-module.exports = chunk
+export default chunk

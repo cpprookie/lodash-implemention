@@ -6,4 +6,4 @@ function pull(arr, ...args) {
   return (arr = arr.filter(item => args.indexOf(item) < 0))
 }
 
-module.exports = pull
+export default pull

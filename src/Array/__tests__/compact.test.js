@@ -1,4 +1,4 @@
-const compact = require('../compact')
+import compact from '../compact'
 
 test('Illegal input', () => {
   expect(() => {

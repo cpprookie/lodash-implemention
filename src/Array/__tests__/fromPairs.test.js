@@ -1,4 +1,4 @@
-const fromPairs = require('../fromPairs')
+import fromPairs from '../fromPairs'
 
 test('example case', () => {
   expect(fromPairs([['a', 1], ['b', 2]])).toEqual({ a: 1, b: 2 })

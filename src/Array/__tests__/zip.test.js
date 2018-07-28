@@ -1,4 +1,4 @@
-const zip = require('../zip')
+import zip from '../zip'
 
 test('common zip case', () => {
   expect(zip(['a', 'b'], [1, 2], [true, false])).toEqual([

@@ -1,4 +1,4 @@
-const takeRight = require('../takeRight')
+import takeRight from '../takeRight'
 
 test('null size case', () => {
   expect(takeRight([1, 2, 3])).toEqual([3])

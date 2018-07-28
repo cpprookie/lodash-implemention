@@ -1,4 +1,4 @@
-module.exports = (arr = [], size = 1) => {
+export default (arr = [], size = 1) => {
   if (!Array.isArray) {
     throw new Error('You can only use take for arrays!')
   }

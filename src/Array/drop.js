@@ -5,4 +5,4 @@ function drop(arr, index = 0) {
   return arr.slice(index)
 }
 
-module.exports = drop
+export default drop

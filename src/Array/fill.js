@@ -16,4 +16,4 @@ function fill(arr, value, start = 0, end = arr.length) {
   return arr
 }
 
-module.exports = fill
+export default fill

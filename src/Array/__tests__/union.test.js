@@ -1,4 +1,4 @@
-const union = require('../union')
+import union from '../union'
 
 test('common case', () => {
   expect(union([2], [1, 2])).toEqual([2, 1])

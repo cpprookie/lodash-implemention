@@ -1,5 +1,3 @@
-const throttle = require('./throttle')
+import throttle from './throttle'
 
-module.exports = {
-  throttle
-}
+export { throttle }

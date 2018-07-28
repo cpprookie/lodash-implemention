@@ -1,4 +1,4 @@
-const chunk = require('../chunk')
+import chunk from '../chunk'
 
 test('illegal input array', () => {
   expect(() => chunk({ 1: 2, 2: 3 })).toThrow()

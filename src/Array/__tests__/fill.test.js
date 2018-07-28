@@ -1,4 +1,4 @@
-const fill = require('../fill')
+import fill from '../fill'
 
 test('fill all', () => {
   expect(fill([1, 2, 3], 'a')).toEqual(['a', 'a', 'a'])

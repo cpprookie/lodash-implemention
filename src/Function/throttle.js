@@ -1,4 +1,4 @@
-module.exports = function throttle(func, wait = 100, options) {
+export default function throttle(func, wait = 100, options) {
   let start = undefined
   const { flush = false, leading = true, trailing = false } = options
 

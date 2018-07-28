@@ -1,4 +1,4 @@
-const dropRight = require('../dropRight')
+import dropRight from '../dropRight'
 
 test('undefined index', () => {
   expect(dropRight([1, 2, 3])).toEqual([1, 2, 3])

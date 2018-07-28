@@ -1,4 +1,4 @@
-const unzip = require('../unzip')
+import unzip from '../unzip'
 
 test('example case', () => {
   expect(unzip([['a', 1, true], ['b', 2, false]])).toEqual([

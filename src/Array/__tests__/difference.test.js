@@ -1,4 +1,4 @@
-const difference = require('../difference')
+import difference from '../difference'
 
 test('same length case', () => {
   expect(difference([1, 2, 3], [1, 4, 3])).toEqual([2])

@@ -1,4 +1,4 @@
-const sortedIndex = require('../sortedIndex')
+import sortedIndex from '../sortedIndex'
 
 test('common case', () => {
   expect(sortedIndex([30, 50], 40)).toEqual(1)

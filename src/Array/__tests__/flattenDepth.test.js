@@ -1,4 +1,4 @@
-const flattenDepth = require('../flattenDepth')
+import flattenDepth from '../flattenDepth'
 
 test('common case ', () => {
   expect(flattenDepth([1, [2], 3])).toEqual([1, 2, 3])

@@ -1,4 +1,4 @@
-module.exports = (arr, separator = '') => {
+export default (arr, separator = '') => {
   if (!Array.isArray(arr)) {
     throw new Error('You can only use join for arrays!')
   }

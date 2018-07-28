@@ -1,4 +1,4 @@
-module.exports = arr => {
+export default arr => {
   if (!Array.isArray(arr)) {
     throw new Error('you can only use sortedUniq for arrays!')
   }

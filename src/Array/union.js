@@ -1,4 +1,4 @@
-module.exports = (...arrs) => {
+export default (...arrs) => {
   if (!Array.isArray(arrs)) {
     throw new Error('You can only use union for arrays!')
   }

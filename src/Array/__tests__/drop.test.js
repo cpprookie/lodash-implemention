@@ -1,4 +1,4 @@
-const drop = require('../drop')
+import drop from '../drop'
 
 test('undefined index', () => {
   expect(drop([1, 2, 3])).toEqual([1, 2, 3])

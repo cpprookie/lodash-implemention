@@ -1,4 +1,4 @@
-const join = require('../join')
+import join from '../join'
 
 test('join case', () => {
   expect(join([1, 2, 3], '-')).toEqual('1-2-3')

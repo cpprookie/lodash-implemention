@@ -17,4 +17,4 @@ function difference(arr1, arr2) {
   return result
 }
 
-module.exports = difference
+export default difference

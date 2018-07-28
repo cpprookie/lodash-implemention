@@ -13,4 +13,4 @@ const flattenDepth = (arr, depth = 1) => {
   )
 }
 
-module.exports = flattenDepth
+export default flattenDepth

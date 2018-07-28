@@ -15,4 +15,4 @@ function dropWhile(arr, predicate = () => true) {
   return arr.slice(dropIndex)
 }
 
-module.exports = dropWhile
+export default dropWhile

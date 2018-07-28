@@ -1,4 +1,4 @@
-module.exports = (arr, predicate = () => true) => {
+export default (arr, predicate = () => true) => {
   if (!Array.isArray(arr)) {
     throw new Error('You can only use remove for arrays!')
   }

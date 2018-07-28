@@ -1,4 +1,4 @@
-const nth = require('../nth')
+import nth from '../nth'
 const array = [1, 2, 3]
 test('common case', () => {
   expect(nth(array, 1)).toEqual(2)

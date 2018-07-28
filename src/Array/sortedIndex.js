@@ -13,7 +13,7 @@ const binarySearch = (arr, value, start, end) => {
       : binarySearch(arr, value, start, middle - 1)
   }
 }
-module.exports = (arr, value) => {
+export default (arr, value) => {
   if (!Array.isArray) {
     throw new Error('You can only use sortedIndex for array!')
   }

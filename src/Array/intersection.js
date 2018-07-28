@@ -20,4 +20,4 @@ function intersection(...args) {
   return res
 }
 
-module.exports = intersection
+export default intersection

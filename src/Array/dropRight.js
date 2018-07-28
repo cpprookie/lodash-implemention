@@ -6,4 +6,4 @@ function dropRight(arr, index = 0) {
   return index > l ? [] : arr.slice(0, l - index)
 }
 
-module.exports = dropRight
+export default dropRight
