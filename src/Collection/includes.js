@@ -11,5 +11,8 @@ export default (collection, value, fromIndex = 0) => {
     Array.isArray(collection) && fromIndex
       ? collection.slice(fromIndex)
       : collection
-  return filter(subCollection, item => item === value).length > 0
+  for (let key in subCollection) {
+    if (subCollection[key] === value) return true
+  }
+  return false
 }
