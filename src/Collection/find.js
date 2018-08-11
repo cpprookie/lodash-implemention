@@ -1,14 +1,15 @@
 export default (collection, iteratee = () => {}) => {
   if (typeof collection !== 'object') {
-    throw new Error('illegal pamras in filter')
+    throw new Error('illegal pamras in reduce')
   }
   if (Array.isArray(collection)) {
-    return collection.filter(iteratee)
+    return collection.find(iteratee)
   } else {
-    const res = []
     for (let key in collection) {
-      iteratee(collection[key]) && res.push(collection[key])
+      if (iteratee(collection[key])) {
+        return collection[key]
+      }
     }
-    return res
+    return undefined
   }
 }
