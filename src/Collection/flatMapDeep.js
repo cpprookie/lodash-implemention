@@ -2,7 +2,7 @@ import reduce from './reduce'
 
 const flatMapDeep = (collection, iteratee = () => {}) => {
   if (typeof collection !== 'object') {
-    throw new Error('illegal pamras in flatMap')
+    throw new Error('illegal pamras in flatMapDeep')
   }
   return reduce(
     collection,

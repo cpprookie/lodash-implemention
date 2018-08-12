@@ -6,7 +6,7 @@ test('find test | array', () => {
     find(users, function(o) {
       return !o.active
     })
-  ).toEqual({ user: 'fred', age: 40, active: false })
+  ).toEqual({ user: 'fred', age: 87, active: false })
 })
 
 test('find test | object', () => {
@@ -14,7 +14,7 @@ test('find test | object', () => {
     find(userObj, function(o) {
       return !o.active
     })
-  ).toEqual({ user: 'fred', age: 40, active: false })
+  ).toEqual({ user: 'fred', age: 87, active: false })
 })
 
 test('find nothing', () => {

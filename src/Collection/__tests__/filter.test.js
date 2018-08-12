@@ -6,7 +6,7 @@ test('filter test | array', () => {
     filter(users, function(o) {
       return !o.active
     })
-  ).toEqual([{ user: 'fred', age: 40, active: false }])
+  ).toEqual([{ user: 'fred', age: 87, active: false }])
 })
 
 test('filter test | object', () => {
@@ -14,5 +14,5 @@ test('filter test | object', () => {
     filter(userObj, function(o) {
       return !o.active
     })
-  ).toEqual([{ user: 'fred', age: 40, active: false }])
+  ).toEqual([{ user: 'fred', age: 87, active: false }])
 })
