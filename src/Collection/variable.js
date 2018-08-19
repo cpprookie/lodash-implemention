@@ -8,4 +8,11 @@ const userObj = {
   1: { user: 'fred', age: 87, active: false }
 }
 
-export { users, userObj }
+var orderByUsers = [
+  { user: 'fred', age: 48 },
+  { user: 'barney', age: 34 },
+  { user: 'fred', age: 40 },
+  { user: 'barney', age: 36 }
+]
+
+export { users, userObj, orderByUsers }
