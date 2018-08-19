@@ -22,7 +22,7 @@ export default (collection, fields = [], order = []) => {
     return collection
   }
   if (fields.length > order.length) {
-    order.concat(Array(fields.length - order.length).fill('desc'))
+    order = order.concat(new Array(fields.length - order.length).fill('asc'))
   }
   const keys = Object.keys(collection)
   for (let start = 0, k = keys.length; start < k; start++) {
