@@ -8,7 +8,8 @@
     "lint": "prettier --single-quote --no-semi --write src/**/*.js",
     "test": "npm run babel && jest lib --colors --testURL=http://localhost/",
     "testCollection": "babel src/collection --out-dir lib/collection --presets=env&& jest lib/collection --colors --testURL=http://localhost/",
-    "testFunction": "babel src/Function --out-dir lib/Function --presets=env&& jest lib/Function --colors --testURL=http://localhost/"
+    "testFunction": "babel src/Function --out-dir lib/Function --presets=env&& jest lib/Function --colors --testURL=http://localhost/",
+    "testLang": "babel src/Lang --out-dir lib/Lang --presets=env&& jest lib/Lang --colors --testURL=http://localhost/"
   },
   "config": {
     "ghooks": {
