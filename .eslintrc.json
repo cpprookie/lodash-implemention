@@ -26,6 +26,7 @@
             "error",
             "never"
         ],
-        "no-undef": 2
+        "no-undef": 2,
+        "no-const-assign": 2
     }
 }
