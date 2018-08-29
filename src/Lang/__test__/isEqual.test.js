@@ -22,6 +22,6 @@ test('isEqual test | deep object true', () => {
 
 test('isEqual test | deep object false', () => {
   expect(
-    isEqual({ a: { b: { c: 1, d: 2 } } }, { a: { b: { c: 1, d: 3 } } })
+    isEqual({ a: { b: { c: 1, d: 2 } } }, { a: { b: { c: 1, d: 3, n: 5 } } })
   ).toEqual(false)
 })

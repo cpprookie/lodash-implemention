@@ -1,4 +1,7 @@
 const isObjEqual = (obj1, obj2) => {
+  if (Object.keys(obj1).length !== Object.keys(obj2).length) {
+    return false
+  }
   for (let key in obj1) {
     const val1 = obj1[key],
       val2 = obj2[key]
