@@ -15,7 +15,8 @@
     },
     "globals": {
         "test": true,
-        "expect": true
+        "expect": true,
+        "Buffer": true
     },
     "rules": {
         "quotes": [
