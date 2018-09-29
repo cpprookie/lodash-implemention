@@ -12,7 +12,8 @@
     "testLang": "babel src/Lang --out-dir lib/Lang --presets=env&& jest lib/Lang --colors --testURL=http://localhost/",
     "testNumber": "babel src/Number --out-dir lib/Number --presets=env&& jest lib/Number --colors --testURL=http://localhost/",
     "testMath": "babel src/Math --out-dir lib/Math --presets=env&& jest lib/Math --colors --testURL=http://localhost/",
-    "testString": "babel src/String --out-dir lib/String --presets=env&& jest lib/String --colors --testURL=http://localhost/"
+    "testString": "babel src/String --out-dir lib/String --presets=env&& jest lib/String --colors --testURL=http://localhost/",
+    "testObject": "babel src/Object --out-dir lib/Object --presets=env&& jest lib/Object --colors --testURL=http://localhost/"
   },
   "config": {
     "ghooks": {
