@@ -1,15 +1,24 @@
-export default mode => (str, chars = '') => {
-  const arr = str.split(chars)
-  if (!arr.length) return ''
-  let start = str.indexOf(arr[0]),
-    end = str.indexOf(arr[arr.length - 1])
-
+export default mode => (str, chars = ' ') => {
+  const length = str.length
+  let start = null,
+    end = null,
+    i = 0
+  while (i < length) {
+    const word = str.slice(i, i + 1)
+    if (!chars.includes(word)) {
+      if (start === null) {
+        start = i
+      }
+      end = i + 1
+    }
+    i++
+  }
   switch (mode) {
     case 'start':
-      return arr.slice(start).join(chars)
+      return str.slice(start)
     case 'end':
-      return arr.slice(0, end + 1).join(chars)
+      return str.slice(0, end)
     default:
-      return arr.slice(start, end + 1).join(chars)
+      return str.slice(start, end)
   }
 }
