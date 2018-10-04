@@ -1,4 +1,4 @@
-import forIn from '../forIn'
+import forOwn from '../forOwn'
 import { Foo } from '../testUtil'
 
 const foo = new Foo()
@@ -7,22 +7,21 @@ const newFoo = new Foo()
 test('double object attribute', () => {
   expect(
     (function() {
-      forIn(foo, (val, key, obj) => {
+      forOwn(foo, (val, key, obj) => {
         obj[key] = 2 * val
       })
       return foo
     })()
   ).toEqual({
     a: 2,
-    b: 4,
-    c: 6
+    b: 4
   })
 })
 
 test('break when iteratee return false', () => {
   expect(
     (function() {
-      forIn(newFoo, (val, key, obj) => {
+      forOwn(newFoo, (val, key, obj) => {
         if (val === 2) return false
         obj[key] = 2 * val
       })
