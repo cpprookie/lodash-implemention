@@ -7,7 +7,8 @@ export default (lower = 0, upper = 1, floating = false) => {
     finalUpper = toNumber(lower)
     floating = upper
   } else {
-    ;(finalLower = toNumber(lower)), (finalUpper = toNumber(upper))
+    finalLower = toNumber(lower)
+    finalUpper = toNumber(upper)
   }
   if (finalLower > finalUpper) {
     ;[finalUpper, finalLower] = [finalLower, finalUpper]
