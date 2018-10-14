@@ -1,5 +1,5 @@
 import forOwn from '../forOwn'
-import { Foo } from '../testUtil'
+import { Foo1 as Foo } from './testVariable'
 
 const foo = new Foo()
 const newFoo = new Foo()
