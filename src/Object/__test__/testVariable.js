@@ -22,4 +22,20 @@ function Foo1() {
 
 Foo1.prototype.c = 3
 
-export { Foo, Bar, users, Foo1 }
+function FuncTest() {
+  this.a = 1
+  this.b = function() {
+    return 1
+  }
+}
+
+FuncTest.prototype.c = 2
+FuncTest.prototype.d = function() {
+  return 2
+}
+
+const pathTest = {
+  a: [{ b: { c: 3 } }]
+}
+
+export { Foo, Bar, users, Foo1, FuncTest, pathTest }
