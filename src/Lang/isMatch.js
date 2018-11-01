@@ -1,4 +1,4 @@
-import isObject from './isObject'
+const isObject = val => typeof val === 'object'
 
 function isMatch(object, source) {
   if (isObject(object) && isObject(source)) {

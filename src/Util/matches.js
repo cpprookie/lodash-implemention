@@ -1,3 +1,3 @@
-import isEqual from '../Lang/isEqual'
+import isMatch from '../Lang/isMatch'
 
-export default source => obj => isEqual(obj, source)
+export default source => obj => isMatch(obj, source)
